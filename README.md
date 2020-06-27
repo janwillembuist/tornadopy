@@ -4,6 +4,9 @@ Create tornado charts with Python.
 
 ## Getting started
 
+1. Clone repository: `git clone https://github.com/janwillembuist/tornadopy`
+2. Install: `python setup.py install`
+
 
 ## Example usage
 
