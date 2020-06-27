@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 
 # Tornado function
-def tornado(lows, highs, **kwargs):
+def plot(lows, highs, **kwargs):
     """Create tornado plot"""
 
     # Handle input
@@ -41,5 +41,13 @@ def tornado(lows, highs, **kwargs):
             ax.plot([center, center], [id_y-0.4, id_y+0.4], 'k')
     ax.set_yticks(y_pos)
     if labels is not None:
-        ax.set_yticklabels(labels)
+        set_labels(labels)
+
+    # Set default limit
     ax.set_xlim([min(lows)-max(widths)/20, max(highs)+max(widths)/20])
+
+
+def set_labels(labels):
+    """Set labels on tornado chart"""
+    ax = plt.gca()
+    ax.set_yticklabels(labels)
