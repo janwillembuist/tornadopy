@@ -16,7 +16,7 @@ def plot(lows, highs, **kwargs):
 
     # Handle kwargs
     labels = kwargs.get('labels', None)
-    center = kwargs.get('center', None)git
+    center = kwargs.get('center', None)
     lines = kwargs.get('lines', False)
 
     # Initialize plot
