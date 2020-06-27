@@ -1,2 +1,2 @@
 # Import the main function
-from tornadochart.makeplot import plot, set_labels
+from tornadopy.makeplot import plot, set_labels
