@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 # Tornado function
 def plot(lows, highs, **kwargs):
-    """Create tornado plot"""
+    """Create tornadochart plot"""
 
     # Handle input
     if len(lows) != len(highs):
@@ -48,6 +48,6 @@ def plot(lows, highs, **kwargs):
 
 
 def set_labels(labels):
-    """Set labels on tornado chart"""
+    """Set labels on tornadochart chart"""
     ax = plt.gca()
     ax.set_yticklabels(labels)
