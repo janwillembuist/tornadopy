@@ -44,7 +44,7 @@ def plot(lows, highs, **kwargs):
         set_labels(labels)
 
     # Set default limit
-    ax.set_xlim([min(lows)-max(widths)/20, max(highs)+max(widths)/20])
+    ax.set_xlim([0.9*(center-max(widths)), 1.1*(center+max(widths))])
 
 
 def set_labels(labels):
