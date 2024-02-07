@@ -18,9 +18,11 @@ def plot(lows, highs, **kwargs):
     labels = kwargs.get('labels', None)
     center = kwargs.get('center', None)
     lines = kwargs.get('lines', False)
+    ax = kwargs.get('ax', None)
 
     # Initialize plot
-    ax = plt.gca()
+    if ax is None:
+        ax = plt.gca()
     widths = highs-lows
     y_pos = np.argsort(np.argsort(widths))
 
